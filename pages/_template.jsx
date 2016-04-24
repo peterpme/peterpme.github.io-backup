@@ -5,7 +5,6 @@ import {config} from 'config'
 
 module.exports = React.createClass({
   componentDidMount() {
-    console.log('config.ga', config.ga)
     ga('create', config.ga, 'auto')
     ga('send', 'pageview')
   },
