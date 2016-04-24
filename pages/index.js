@@ -55,16 +55,7 @@ const Header = ({
   </header>
 )
 
-const Section = ({
-  title,
-  props
-}) => (
-  <section className='Section'>
-    {props}
-  </section>
-)
-
-export default class Sass extends React.Component {
+export default class Index extends React.Component {
   render () {
     return (
       <div className='Container'>

@@ -1,2 +1,8 @@
-siteTitle="The Home Page of Peter Piekarczyk"
+title = 'Peter Piekarczyk • Software Engineer'
+url = 'https://www.peterp.me'
+author = 'Peter Piekarczyk'
+twitter = '@peterpme'
+github = 'peterpme'
+medium = 'peterpme'
+ga = 'UA-54081195-1'
 linkPrefix = "/"
