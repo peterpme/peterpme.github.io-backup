@@ -1,0 +1,98 @@
+import React from 'react'
+import facebook from '../images/facebook.svg'
+import twitter from '../images/twitter.svg'
+import github from '../images/github.svg'
+import medium from '../images/medium.svg'
+
+var config = {
+  image: 'https://res.cloudinary.com/peterpme/image/upload/f_auto,w_400,h_400/v1461435483/peter-piekarczyk-headshot.jpg',
+  name: 'Peter Piekarczyk',
+  title: 'Fun-employed Software Engineer',
+}
+
+var socialLinks = [
+  {
+    label: 'Github',
+    url: 'https://github.com/peterpme',
+    icon: github
+  },
+  {
+    label: 'Twitter',
+    url: 'https://twitter.com/peterpme',
+    icon: twitter
+  },
+  {
+    label: 'Medium',
+    url: 'https://medium.com/@peterpme/',
+    icon: medium
+  }
+]
+
+var speaking = [
+  {
+    url: 'https://www.youtube.com/watch?v=KE2GC9lm6jw',
+    label: 'React Rally 2015 - React & Web Audio Api: Building a MIDI Interface'
+  },
+  {
+    url: 'https://www.youtube.com/watch?v=X7njm67K6QA',
+    label: 'JSConf 2015 - Backbone & React - Building a Hybrid Application'
+  }
+]
+
+const Header = ({
+  image,
+  name,
+  title
+}) => (
+  <header className='Header'>
+    <figure className='Header-figure'>
+      <img className='Header-image' src={image} alt={`Photo of ${name}`} />
+      <figcaption>
+        <h1 className='Header-name'>{name}</h1>
+        <span className='Header-title'>{title}</span>
+      </figcaption>
+    </figure>
+  </header>
+)
+
+const Section = ({
+  title,
+  props
+}) => (
+  <section className='Section'>
+    {props}
+  </section>
+)
+
+export default class Sass extends React.Component {
+  render () {
+    return (
+      <div className='Container'>
+        <Header image={config.image} name={config.name} title={config.title} />
+        <ul className='Social'>
+          {socialLinks.map((link) => (
+            <li className='Social-item' key={link.label}>
+              <a href={link.url} title={link.label}>
+                <img src={link.icon} width={36} height={36} alt={link.label} />
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p className='About'>
+          I'm a software engineer heavily influenced by the javascript stack. I love building complex applications in the most elegant of ways.<br/><br/>
+          I'm in the process of building my own product, but I consult in the mean time. I help companies build cool stuff in React, Alt, Redux, Webpack, Babel, etc. I'm sure you've heard of them. If you're interested in learning more, <a className='Link' href='mailto:consulting@peterp.me'>email me</a>.
+        </p>
+        <h2 className='About-heading'>Speaking:</h2>
+        <ul className='Speaking'>
+          {speaking.map((event, index) => (
+            <li className='Speaking-item' key={index}>
+              <a href={event.url} title={event.label}>
+                {event.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+}

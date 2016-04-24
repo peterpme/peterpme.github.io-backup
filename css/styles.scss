@@ -1,0 +1,150 @@
+$colorWhite: #fff;
+$colorPurple: hsla(262, 52%, 18%, 1);
+
+$firstColor: #006f9e;
+$secondColor: #4c008f;
+$thirdColor: #350038;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: $colorWhite;
+  background: $firstColor;
+  background: linear-gradient(45deg, $firstColor 0%, $secondColor 63%, $thirdColor 100%);
+  background-attachment: fixed;
+}
+
+.Container {
+  max-width: 460px;
+  padding: 40px 20px;
+  margin: auto;
+
+  @media (min-width: 768px) {
+    padding: 60px 20px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 100px 20px 80px;
+  }
+}
+
+.Header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: $colorWhite;
+}
+
+.Header-name {
+  color: inherit;
+  margin: 0 auto 15px;
+  font-size: 34px;
+  padding-bottom: 15px;
+  border-bottom: 5px solid rgba($thirdColor, 0.13);
+}
+
+.Header-title {
+  color: inherit;
+  font-size: 20px;
+}
+
+.Header-image {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 6px solid lighten($colorPurple, 6%);
+  margin-bottom: 20px;
+}
+
+.Social {
+  text-align: center;
+  margin: 0 auto 25px;
+  padding: 0;
+}
+
+.Social-item {
+  margin: 0 9px;
+  list-style: none;
+  color: $colorWhite;
+  display: inline-block;
+
+  a {
+    height: 46px;
+    width: 46px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 4px 9px;
+    margin: 0;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  img {
+    margin: 0;
+  }
+}
+
+.Speaking {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.About {
+  text-align: center;
+}
+
+.About-heading {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.Speaking-item {
+  color: #fff;
+  display: inline-block;
+  width: 46%;
+  margin: 0 5px 10px;
+
+  a {
+    padding: 8px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.Link {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 0px 3px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
