@@ -31,12 +31,24 @@ var socialLinks = [
 var speaking = [
   {
     url: 'https://www.youtube.com/watch?v=KE2GC9lm6jw',
-    label: 'React Rally 2015 - React & Web Audio Api: Building a MIDI Interface'
+    label: '2015 React Rally - React & Web Audio Api: Building a MIDI Interface'
   },
   {
     url: 'https://www.youtube.com/watch?v=X7njm67K6QA',
-    label: 'JSConf 2015 - Backbone & React - Building a Hybrid Application'
-  }
+    label: '2015 JSConf - Backbone & React - Building a Hybrid Application'
+  },
+  {
+    url: 'https://speakerdeck.com/peterpme/what-the-flux-a-quick-primer-on-react-and-flux',
+    label: '2015 Code N Cans @ Braintree - What The Flux?'
+  },
+  {
+    url: 'https://speakerdeck.com/peterpme/future-of-high-performance-node',
+    label: '2016 Node Foundation - Future of High Performance Node'
+  },
+  {
+    url: 'https://speakerdeck.com/peterpme/things-i-wish-i-knew-about-react-native-when-i-started',
+    label: '2017 RN Chicago Things I Wish I Knew About React Native When I Started'
+  },
 ]
 
 const Header = ({
