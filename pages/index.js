@@ -39,7 +39,7 @@ var speaking = [
   },
   {
     url: 'https://speakerdeck.com/peterpme/what-the-flux-a-quick-primer-on-react-and-flux',
-    label: '2015 Code N Cans @ Braintree - What The Flux?'
+    label: '2015 Code N Cans @ Braintree - What The Flux? React & Flux Primer'
   },
   {
     url: 'https://speakerdeck.com/peterpme/future-of-high-performance-node',
