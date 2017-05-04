@@ -47,7 +47,11 @@ var speaking = [
   },
   {
     url: 'https://speakerdeck.com/peterpme/things-i-wish-i-knew-about-react-native-when-i-started',
-    label: '2017 RN Chicago Things I Wish I Knew About React Native When I Started'
+    label: '2017 RN Chicago - Things I Wish I Knew About React Native When I Started'
+  },
+  {
+    url: '#',
+    label: '2017 Node.js Chicago - Dealing with Stress and Anxiety as a Developer",
   },
 ]
 
