@@ -7,7 +7,7 @@ import medium from '../images/medium.svg'
 var config = {
   image: 'https://res.cloudinary.com/peterpme/image/upload/f_auto,w_400,h_400/v1461435483/peter-piekarczyk-headshot.jpg',
   name: 'Peter Piekarczyk',
-  title: 'Fun-employed Software Engineer',
+  title: 'Software Engineering Consultant',
 }
 
 var socialLinks = [
@@ -44,6 +44,10 @@ var speaking = [
   {
     url: 'https://speakerdeck.com/peterpme/future-of-high-performance-node',
     label: '2016 Node Foundation - Future of High Performance Node'
+  },
+  {
+    url: '#',
+    label: '2016 React Remote Conf - Moving Practically'
   },
   {
     url: 'https://speakerdeck.com/peterpme/things-i-wish-i-knew-about-react-native-when-i-started',
@@ -86,8 +90,8 @@ export default class Index extends React.Component {
           ))}
         </ul>
         <p className='About'>
-          I'm a software engineer heavily influenced by the javascript stack. I love building complex applications in the most elegant of ways.<br/><br/>
-          I'm in the process of building my own product, but I consult in the mean time. I help companies build cool stuff in React, Alt, Redux, Webpack, Babel, etc. I'm sure you've heard of them. If you're interested in learning more, <a className='Link' href='mailto:consulting@peterp.me'>email me</a>.
+          I'm a software engineer heavily influenced by the Javascript stack. I love building complex applications in the most elegant of ways.<br/><br/>
+          I help companies build cool stuff in modern technologies including React, Redux, Webpack, GraphQL, Babel, etc. If you're interested in learning more, <a className='Link' href='mailto:consulting@peterp.me'>email me</a>.
         </p>
         <h2 className='About-heading'>Speaking:</h2>
         <ul className='Speaking'>
