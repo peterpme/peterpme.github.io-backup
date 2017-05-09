@@ -55,7 +55,7 @@ var speaking = [
   },
   {
     url: '#',
-    label: '2017 Node.js Chicago - Dealing with Stress and Anxiety as a Developer",
+    label: '2017 Node.js Chicago - Dealing with Stress and Anxiety as a Developer',
   },
 ]
 

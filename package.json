@@ -9,9 +9,8 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-1": "^6.5.0",
     "front-matter": "^2.0.7",
-    "gatsby": "^0.10.0",
+    "gatsby": "^0.12.45",
     "highlight.js": "^9.3.0",
-    "history": "^2.0.2",
     "js-yaml": "^3.6.0",
     "markdown-it": "^6.0.1",
     "markdown-it-abbr": "^1.0.3",
@@ -23,7 +22,6 @@
     "react-google-analytics": "^0.2.0",
     "react-headroom": "^1.8.2",
     "react-responsive-grid": "^0.3.3",
-    "react-router": "^2.2.4",
     "toml-js": "0.0.8",
     "typography": "^0.7.0"
   },
@@ -40,8 +38,10 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "deploy": "gatsby build && gh-pages -d public -b master -a",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"pages/*.js\" \"utils/*.js\" \"wrappers/*.js\" \"html.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
