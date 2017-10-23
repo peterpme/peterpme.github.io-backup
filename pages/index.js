@@ -87,23 +87,24 @@ export default class Index extends React.Component {
         <ul className='Social'>
           {socialLinks.map((link) => (
             <li className='Social-item' key={link.label}>
-              <a href={link.url} title={link.label}>
+              <a className="Link" href={link.url} title={link.label}>
                 <img src={link.icon} width={36} height={36} alt={link.label} />
               </a>
             </li>
           ))}
         </ul>
         <p className='About'>
-          I'm a Javascript Engineer. I love building complex applications in the most elegant of ways.<br />
-          I'm currently working on <a href="https://www.orchard.ai">Orchard</a>. Orchard helps you stay in touch with the people that matter the most. We use machine learning and some relationship science to help you reconnect with old colleagues, friends and business partners.<br />
-          When it comes to building things, I like to move rapidly. I utilize technologies such as React & React Native, Expo, Apollo, GraphQL and ReasonML.<br/>
-          If you'd like to get in touch with me, shoot me an <a href="mailto:peter@peterp.me">email</a> Recruiters need not apply!
+          I'm a Javascript Engineer. I love building complex applications in the most elegant of ways.<br /><br/>
+          I'm currently working on <a className="Link" target="_blank" href="https://www.orchard.ai">Orchard</a>. Orchard helps you stay in touch with the people that matter the most. We use machine learning and some relationship science to help you reconnect with old colleagues, friends and business partners.<br /><br/>
+          When it comes to building things, I like to move rapidly. I utilize technologies such as React & React Native, Expo, Apollo, GraphQL and ReasonML.<br/><br/>
+          If you'd like to get in touch with me, shoot me an <a className="Link" href="mailto:contact@peterp.me">email</a>
         </p>
+        <br/>
         <h2 className='About-heading'>Speaking:</h2>
         <ul className='Speaking'>
-          {speaking.map((event, index) => (
-            <li className='About-heading' key={index}>
-              <a href={event.url} title={event.label}>
+          {speaking.reverse().map((event, index) => (
+            <li className='About-heading' style={{ textAlign: 'left' }} key={index}>
+              <a target="_blank" className="Link" href={event.url} title={event.label}>
                 {event.label}
               </a>
             </li>
