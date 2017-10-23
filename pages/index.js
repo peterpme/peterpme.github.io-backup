@@ -5,9 +5,9 @@ import github from '../images/github.svg'
 import medium from '../images/medium.svg'
 
 var config = {
-  image: 'https://res.cloudinary.com/peterpme/image/upload/f_auto,w_400,h_400/v1461435483/peter-piekarczyk-headshot.jpg',
+  image: 'https://res.cloudinary.com/peterpme/image/upload/f_auto,w_200,h_200,g_center,c_fill/v1461435483/peter-piekarczyk-headshot.jpg',
   name: 'Peter Piekarczyk',
-  title: 'Software Engineering Consultant',
+  title: 'Technical Cofounder, Orchard',
 }
 
 var socialLinks = [
@@ -57,6 +57,10 @@ var speaking = [
     url: '#',
     label: '2017 Node.js Chicago - Dealing with Stress and Anxiety as a Developer',
   },
+  {
+    url: 'https://www.youtube.com/watch?v=8XrCfsR7GoU',
+    label: '2017 DevopsDays - Stress & Anxiety as a developer'
+  }
 ]
 
 const Header = ({
@@ -90,13 +94,15 @@ export default class Index extends React.Component {
           ))}
         </ul>
         <p className='About'>
-          I'm a software engineer heavily influenced by the Javascript stack. I love building complex applications in the most elegant of ways.<br/><br/>
-          I help companies build cool stuff in modern technologies including React, Redux, Webpack, GraphQL, Babel, etc. If you're interested in learning more, <a className='Link' href='mailto:consulting@peterp.me'>email me</a>.
+          I'm a Javascript Engineer. I love building complex applications in the most elegant of ways.<br />
+          I'm currently working on <a href="https://www.orchard.ai">Orchard</a>. Orchard helps you stay in touch with the people that matter the most. We use machine learning and some relationship science to help you reconnect with old colleagues, friends and business partners.<br />
+          When it comes to building things, I like to move rapidly. I utilize technologies such as React & React Native, Expo, Apollo, GraphQL and ReasonML.<br/>
+          If you'd like to get in touch with me, shoot me an <a href="mailto:peter@peterp.me">email</a> Recruiters need not apply!
         </p>
         <h2 className='About-heading'>Speaking:</h2>
         <ul className='Speaking'>
           {speaking.map((event, index) => (
-            <li className='Speaking-item' key={index}>
+            <li className='About-heading' key={index}>
               <a href={event.url} title={event.label}>
                 {event.label}
               </a>
