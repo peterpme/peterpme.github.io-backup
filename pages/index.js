@@ -73,7 +73,7 @@ var speaking = [
   {
     url:
       'https://crosscuttingconcerns.com/Podcast-050-Peter-Piekarczyk-on-Burnout',
-    label: 'Burnout, Stress & Anciety as a Developer'
+    label: 'Burnout, Stress & Anxiety as a Developer'
   }
 ];
 
