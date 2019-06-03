@@ -36,7 +36,7 @@ var socialLinks = [
   },
   {
     label: 'Linked In',
-    url: "https://www.linkedin.com/in/peterpme"
+    url: "https://www.linkedin.com/in/peterpme",
     icon: linkedin
   }
 ];
