@@ -156,15 +156,13 @@ export default class Index extends React.Component {
           <br />
           I'm currently working on{' '}
           <a
-            title="Orchard: Manage your personal and professional network"
+            title="Draftbit: Building apps visually"
             className="Link"
             target="_blank"
-            href="https://www.orchard.ai"
+            href="https://www.draftbit.com"
           >
-            Orchard
-          </a>. Orchard helps you stay in touch with the people that matter the
-          most. We use machine learning and some relationship science to help
-          you reconnect with old colleagues, friends and business partners.<br />
+            Draftbit
+          </a>. Draftbit is the fastest way to assemble beautiful mobile apps and then outputting clean, reusable code.
           <br />
           When it comes to building things, I like to move rapidly. I utilize
           technologies such as React & React Native, Expo, Apollo, GraphQL and
