@@ -3,12 +3,14 @@ import facebook from '../images/facebook.svg';
 import twitter from '../images/twitter.svg';
 import github from '../images/github.svg';
 import medium from '../images/medium.svg';
+import instagram from '../images/instagram.svg';
+import linkedin from '../images/linkedin.svg';
 
 var config = {
   image:
     'https://res.cloudinary.com/peterpme/image/upload/f_auto,w_200,h_200,g_center,c_fill/v1461435483/peter-piekarczyk-headshot.jpg',
   name: 'Peter Piekarczyk',
-  title: 'Technical Cofounder, Orchard'
+  title: 'Cofounder, Draftbit'
 };
 
 var socialLinks = [
@@ -26,6 +28,16 @@ var socialLinks = [
     label: 'Medium',
     url: 'https://medium.com/@peterpme/',
     icon: medium
+  },
+  {
+    label: 'Instagram',
+    url: 'https://instagram.com/peterpme/',
+    icon: instagram
+  },
+  {
+    label: 'Linked In',
+    url: "https://www.linkedin.com/in/peterpme"
+    icon: linkedin
   }
 ];
 
@@ -74,6 +86,41 @@ var speaking = [
     url:
       'https://crosscuttingconcerns.com/Podcast-050-Peter-Piekarczyk-on-Burnout',
     label: 'Burnout, Stress & Anxiety as a Developer'
+  },
+  {
+    url: 'https://www.youtube.com/watch?v=a8tm_bxiE48',
+    label: '2018 React Chicago - ReasonML A Love Story',
+    year: 2018
+  },
+  {
+    url: 'https://www.youtube.com/watch?v=HAz_WUqO62A',
+    label: '2019 AppJs Conf Poland - Building apps visually with Draftbit',
+    year: 2019
+  },
+  {
+    url: 'https://www.youtube.com/watch?v=Hp4t-bMCVe4',
+    label: '2019 Reason Conf Vienna - How ReasonML Has Helped our Hiring Process',
+    year: 2019
+  },
+  {
+    url: '#',
+    label: '2019 MagnoliaJS - Building apps visually with Draftbit',
+    year: 2019
+  },
+  {
+    url: '#',
+    label: '2019 GOTO Conf Chicago - ReasonML & the future of React',
+    year: 2019
+  },
+  {
+    url: '#',
+    label: '2019 Detroit Tech Watch - Becoming 10x the engineer with ReasonML',
+    year: 2019
+  },
+  {
+    url: '#',
+    label: '2019 - React Native EU - Building Next Generation Apps Visually using Draftbit',
+    year: 2019
   }
 ];
 
