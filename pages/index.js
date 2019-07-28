@@ -113,7 +113,7 @@ var speaking = [
     year: 2019
   },
   {
-    url: '#',
+    url: "https://www.youtube.com/watch?v=RKPijLl1n9o",
     label: '2019 Detroit Tech Watch - Becoming 10x the engineer with ReasonML',
     year: 2019
   },
