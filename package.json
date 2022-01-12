@@ -11,7 +11,7 @@
     "gatsby": "^0.12.45",
     "highlight.js": "^9.3.0",
     "js-yaml": "^3.6.0",
-    "markdown-it": "^6.0.1",
+    "markdown-it": "^12.3.2",
     "markdown-it-abbr": "^1.0.3",
     "markdown-it-attrs": "^0.1.8",
     "markdown-it-deflist": "^2.0.1",
